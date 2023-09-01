@@ -1,3 +1,5 @@
+import os
+os.system("python3 -m pip install tensorflow transformers")
 import streamlit as st
 from transformers import pipeline
 import secrets
