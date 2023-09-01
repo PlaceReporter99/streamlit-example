@@ -16,6 +16,6 @@ def mask_corrupt(text, num):
                 m[x] = "[MASK]"
         text = fill_masks(text)
     return text
-text = st.text_area("Text to mask corrupt", "A ble con s j jd tin")
+text = st.text_area("Text to mask corrupt", value = "A ble con s j jd tin")
 num = st.number_input("Number of iterations", 1)
 st.button("Mask Corrupt", on_click = lambda: st.write(mask_corrupt(text, num)))
